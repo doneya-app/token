@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/a27eeb7c-1365-4c67-b949-35a9078f5f67
+**URL**: https://token.kristoffer.dev
 
 ## How can I edit this code?
 
