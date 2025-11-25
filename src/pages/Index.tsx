@@ -2,7 +2,7 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import { ContextCard } from "@/components/ContextCard";
 import { JWTDecoder } from "@/components/JWTDecoder";
 import { TokenCounter } from "@/components/TokenCounter";
-import { Key, Brain, Coins, MessageSquare, Code2, ExternalLink } from "lucide-react";
+import { Key, Brain, Coins, MessageSquare, Code2, ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 
@@ -67,7 +67,23 @@ const Index = () => {
               Token Explorer
             </h1>
           </div>
-          <ThemeToggle />
+          <div className="flex items-center gap-2">
+            <Button
+              variant="ghost"
+              size="icon"
+              asChild
+            >
+              <a
+                href="https://github.com/doneya-app/token"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View source on GitHub"
+              >
+                <Github className="h-5 w-5" />
+              </a>
+            </Button>
+            <ThemeToggle />
+          </div>
         </div>
       </header>
 
@@ -153,7 +169,18 @@ const Index = () => {
               Kristoffer
             </a>
           </p>
-          <p>Educational resource exploring the multifaceted concept of "token"</p>
+          <p className="mb-2">Educational resource exploring the multifaceted concept of "token"</p>
+          <div className="flex items-center justify-center gap-1 mt-3">
+            <a
+              href="https://github.com/doneya-app/token"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline inline-flex items-center gap-1"
+            >
+              <Github className="h-4 w-4" />
+              View source on GitHub
+            </a>
+          </div>
         </div>
       </footer>
     </div>
